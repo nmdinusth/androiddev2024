@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
+* Name: Nguyen Minh Duc
+* ID: BA12-050
+* Group ID: 18
 * Project Name: *Your Project Name here*
