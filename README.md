@@ -12,5 +12,5 @@ Student Info
 
 * Name: Nguyen Minh Duc
 * ID: BA12-050
-* Group ID: 18
+* Group ID: 16
 * Project Name: *Your Project Name here*
