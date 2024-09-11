@@ -2,6 +2,11 @@ package vn.edu.usth.usthweatherfix;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -24,6 +29,7 @@ public class WeatherActivity extends AppCompatActivity {
         ForecastFragment firstFragment = new ForecastFragment();
         getSupportFragmentManager().beginTransaction().add(
                 R.id.main, firstFragment).commit();
+
     }
 
     @Override
