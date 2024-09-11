@@ -21,6 +21,9 @@ public class WeatherActivity extends AppCompatActivity {
             return insets;
         });
         Log.d(WA,"onCreate");
+        ForecastFragment firstFragment = new ForecastFragment();
+        getSupportFragmentManager().beginTransaction().add(
+                R.id.main, firstFragment).commit();
     }
 
     @Override
