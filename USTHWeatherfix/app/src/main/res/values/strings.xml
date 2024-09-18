@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name" translatable="false">USTH Weather(fix)</string>
+    <string name="app_name">USTH Weather(fix\</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="Monday">MON</string>
     <string name="Tuesday">TUE</string>
-    <string name="Thursday">WED</string>
+    <string name="Wednesday">WED</string>
+    <string name="Thursday">THU</string>
     <string name="Friday">FRI</string>
     <string name="Saturday">SAT</string>
     <string name="Sunday">SUN</string>

@@ -30,7 +30,7 @@
              android:gravity="center"
              android:paddingLeft="9px"
              android:paddingRight="9px"
-             android:text="Mon" />
+             android:text="@string/Monday" />
 
 
          <ImageView
@@ -44,7 +44,7 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:layout_marginRight="5dp"
-             android:text="Partly Cloudy \n 24C - 31C"
+             android:text="@string/cloudy"
              android:layout_gravity="center_vertical" />
  </LinearLayout>
     <LinearLayout
@@ -60,7 +60,7 @@
                 android:gravity="center"
                 android:paddingLeft="9px"
                 android:paddingRight="9px"
-                android:text="Tues" />
+                android:text="@string/Tuesday" />
 
             <ImageView
                 android:layout_width="70dp"
@@ -72,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="5dp"
-                android:text="Clear \n 24C - 31C"
+                android:text="@string/clear"
                 android:layout_gravity="center_vertical" />
 
 
@@ -90,7 +90,7 @@
                 android:gravity="center"
                 android:paddingLeft="9px"
                 android:paddingRight="9px"
-                android:text="Wedn" />
+                android:text="@string/Wednesday" />
 
             <ImageView
                 android:layout_width="70dp"
@@ -103,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="5dp"
-                android:text="Partly Cloudy \n 24C - 31C"
+                android:text="@string/drizzle"
                 android:layout_gravity="center_vertical" />
     </LinearLayout>
 
@@ -120,7 +120,7 @@
                 android:gravity="center"
                 android:paddingLeft="9px"
                 android:paddingRight="9px"
-                android:text="Thurs" />
+                android:text="@string/Thursday" />
 
             <ImageView
                 android:layout_width="70dp"
@@ -133,7 +133,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="5dp"
-                android:text="Partly Cloudy \n 20C - 31C"
+                android:text="@string/cloudy"
                 android:layout_gravity="center_vertical" />
     </LinearLayout>
 
@@ -150,7 +150,7 @@
                 android:gravity="center"
                 android:paddingLeft="9px"
                 android:paddingRight="9px"
-                android:text="Fri" />
+                android:text="@string/Friday" />
 
             <ImageView
                 android:layout_width="70dp"
@@ -163,7 +163,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="5dp"
-                android:text="Partly Cloudy \n 24C - 31C"
+                android:text="@string/drizzle"
                 android:layout_gravity="center_vertical" />
     </LinearLayout>
 
@@ -180,7 +180,7 @@
                 android:gravity="center"
                 android:paddingLeft="9px"
                 android:paddingRight="9px"
-                android:text="Sat" />
+                android:text="@string/Saturday" />
 
             <ImageView
                 android:layout_width="70dp"
@@ -193,7 +193,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="5dp"
-                android:text="Clear \n 26C - 35C"
+                android:text="@string/clear"
                 android:layout_gravity="center_vertical" />
     </LinearLayout>
     <LinearLayout
@@ -209,7 +209,7 @@
                 android:gravity="center"
                 android:paddingLeft="9px"
                 android:paddingRight="9px"
-                android:text="Sun" />
+                android:text="@string/Sunday" />
 
             <ImageView
                 android:layout_width="70dp"
@@ -222,7 +222,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="5dp"
-                android:text="Rain \n 19C - 25C"
+                android:text="@string/rain"
                 android:layout_gravity="center_vertical" />
             </LinearLayout>
         </LinearLayout>
