@@ -27,21 +27,16 @@ public class WeatherActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_weather);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        setContentView(R.layout.activity_main);
         Log.d(WA,"onCreate");
-//        ForecastFragment firstFragment = new ForecastFragment();
-//        getSupportFragmentManager().beginTransaction().add(
-//                R.id.main, firstFragment).commit();
+
         PagerAdapter adapter = new HomeFragmentPagerAdapter(getSupportFragmentManager());
-        ViewPager pager = findViewById(R.id.pager);
+        ViewPager pager = (ViewPager) findViewById(R.id.pager);
         pager.setOffscreenPageLimit(3);
         pager.setAdapter(adapter);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
+        tabLayout.setupWithViewPager(pager);
 
     }
 
@@ -77,8 +72,7 @@ public class WeatherActivity extends AppCompatActivity {
 
     public class HomeFragmentPagerAdapter extends FragmentPagerAdapter {
         private final int PAGE_COUNT = 3;
-        private final String[] titles = new String[]{"Hanoi","Paris","Toulouse"};
-
+        private String[] titles = new String[]{"Hanoi","Da Nang","Tokyo"};
         public HomeFragmentPagerAdapter(FragmentManager fm) {
             super(fm);
         }
@@ -86,12 +80,12 @@ public class WeatherActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             return PAGE_COUNT;
-            return (titles.length);
         }
 
         @NonNull
         @Override
         public Fragment getItem(int page){
+
             return new WeatherAndForecastFragment();
         }
 
