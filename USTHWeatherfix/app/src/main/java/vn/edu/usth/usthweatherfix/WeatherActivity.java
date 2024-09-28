@@ -2,6 +2,7 @@ package vn.edu.usth.usthweatherfix;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.media.MediaPlayer;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -24,6 +25,8 @@ import java.security.PublicKey;
 
 public class WeatherActivity extends AppCompatActivity {
     private static final String WA = "WeatherActivity";
+
+    MediaPlayer mediaPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,9 @@ public class WeatherActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
         tabLayout.setupWithViewPager(pager);
 
+        mediaPlayer = MediaPlayer.create(this, R.raw.audio1);
+
+        mediaPlayer.start();
     }
 
     @Override
@@ -67,6 +73,10 @@ public class WeatherActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        if (mediaPlayer != null){
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
         Log.d(WA, "onDestroy");
     }
 
