@@ -3,25 +3,20 @@ package vn.edu.usth.usthweatherfix;
 import android.os.Bundle;
 import android.util.Log;
 import android.media.MediaPlayer;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.view.Menu;
+import android.view.MenuItem;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.appcompat.widget.Toolbar;
 import androidx.annotation.NonNull;
+
+
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.tabs.TabLayout;
-
-import java.security.PublicKey;
 
 public class WeatherActivity extends AppCompatActivity {
     private static final String WA = "WeatherActivity";
@@ -41,11 +36,27 @@ public class WeatherActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
         tabLayout.setupWithViewPager(pager);
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.audio1);
+//        mediaPlayer = MediaPlayer.create(this, R.raw.audio1);
+//
+//        mediaPlayer.start();
 
-        mediaPlayer.start();
+        Toolbar Toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(Toolbar);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int itemId = item.getItemId();
+        if (itemId == R.id.search) {
+            return true;
+}
+        return super.onOptionsItemSelected(item);}
     @Override
     protected void onStart() {
         super.onStart();
