@@ -36,9 +36,9 @@ public class WeatherActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
         tabLayout.setupWithViewPager(pager);
 
-//        mediaPlayer = MediaPlayer.create(this, R.raw.audio1);
-//
-//        mediaPlayer.start();
+        mediaPlayer = MediaPlayer.create(this, R.raw.audio1);
+
+        mediaPlayer.start();
 
         Toolbar Toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(Toolbar);
