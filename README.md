@@ -13,4 +13,4 @@ Student Info
 * Name: Nguyen Minh Duc
 * ID: BA12-050
 * Group ID: 15
-* Project Name: *Your Project Name here*
+* Project Name: Online News Reader
